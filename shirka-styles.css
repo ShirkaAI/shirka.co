@@ -1,0 +1,128 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: right;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 3rem;
+}
+
+.logo {
+    max-width: 50rem;
+}
+
+p {
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+
+.tagline {
+    font-size: 1.98rem;
+    margin-block-start: 1rem;
+    opacity: 0.9;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #595959;
+}
+
+.about {
+    font-size: 1.49rem;
+}
+
+.first-contact {
+    font-size: 1.49rem;
+}
+
+.follow {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 2;
+}
+
+.box-link {
+    padding: 0 3px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.follow-link {
+    border-bottom: 1px solid rgb(57, 141, 180);
+}
+
+.follow:hover .follow-link {
+    background-color: rgb(57, 141, 180);
+    border-bottom: none;
+    border-bottom: 1px solid rgb(57, 141, 180, 0);
+    opacity: 1;
+}
+
+.email {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 2;
+}
+
+.email-link {
+    border-bottom: 1px solid rgb(242, 94, 14);
+}
+
+.email:hover .email-link {
+    background-color: rgb(242, 94, 14);
+    border-bottom: none;
+    border-bottom: 1px solid rgb(242, 94, 14, 0);
+    opacity: 1;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    padding: 0 3rem;
+    font-weight: 200;
+    opacity: 0.4;
+}

@@ -1,7 +1,8 @@
 html,
 body {
-    margin: 0;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,33 +17,19 @@ body {
     overflow: hidden;
 }
 
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.video-background video {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    width: 100%;
-    height: 100%;
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+    padding: 2rem;
 }
 
 .logo {
@@ -50,6 +37,7 @@ body {
 }
 
 p {
+    margin: 0.7rem 0;
     font-size: 1.25rem;
     opacity: 0.7;
 }
@@ -58,12 +46,6 @@ p {
     font-size: 1.98rem;
     margin-block-start: 1rem;
     opacity: 0.9;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background: #595959;
 }
 
 .about {
@@ -116,13 +98,42 @@ hr {
     opacity: 1;
 }
 
-.footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
+footer {
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
-    padding: 0 3rem;
+    padding: 0 3rem 1rem;
     font-weight: 200;
     opacity: 0.4;
+}
+
+footer .footer-divider {
+    height: 1px;
+    background: #595959;
+    width: 100%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-height: 800px) {
+    body {
+        overflow: auto;
+    }
 }

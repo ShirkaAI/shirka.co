@@ -48,6 +48,11 @@ p {
     opacity: 0.9;
 }
 
+.r-symbol {
+    font-size: 1.3rem;
+    vertical-align: text-top;
+}
+
 .about {
     font-size: 1.49rem;
 }

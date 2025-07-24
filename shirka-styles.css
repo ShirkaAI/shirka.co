@@ -43,7 +43,7 @@ p {
 }
 
 .tagline {
-    font-size: 1.98rem;
+    font-size: 1.96rem;
     margin-block-start: 1rem;
     opacity: 0.9;
 }
@@ -53,21 +53,45 @@ p {
     vertical-align: text-top;
 }
 
+.embedded-line {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    opacity: 0.9;
+}
+
+.embedded {
+}
+
+.sovereign {
+    margin-left: 0.7rem;
+}
+
+.resilient {
+    margin-left: 0.7rem;
+}
+
 .about {
-    font-size: 1.49rem;
+    font-size: 1.9rem;
 }
 
 .first-contact {
-    font-size: 1.49rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
-.follow {
-    text-decoration: none;
-    color: #ffffff;
+.year {
+   
+}
+
+.social {
+    font-size: 1.178rem;
     line-height: 2;
 }
 
-.box-link {
+.social a {
+    color: #ffffff;
     padding: 0 3px;
     position: relative;
     display: inline-block;
@@ -75,28 +99,34 @@ p {
     transition: all 0.3s ease;
 }
 
-.follow-link {
+.x-link {
+    padding: 0 6px;
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+.x-link:hover {
+    background-color: rgb(78, 78, 78);
+    border-bottom: none;
+    border-bottom: 1px solid rgba(78, 78, 78, 0);
+    opacity: 1;
+}
+
+.linkedin-link {
     border-bottom: 1px solid rgb(57, 141, 180);
 }
 
-.follow:hover .follow-link {
+.linkedin-link:hover {
     background-color: rgb(57, 141, 180);
     border-bottom: none;
     border-bottom: 1px solid rgb(57, 141, 180, 0);
     opacity: 1;
 }
 
-.email {
-    text-decoration: none;
-    color: #ffffff;
-    line-height: 2;
-}
-
 .email-link {
     border-bottom: 1px solid rgb(242, 94, 14);
 }
 
-.email:hover .email-link {
+.email-link:hover {
     background-color: rgb(242, 94, 14);
     border-bottom: none;
     border-bottom: 1px solid rgb(242, 94, 14, 0);
@@ -107,7 +137,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    padding: 0 3rem 1rem;
+    padding: 0 2rem 1.5rem;
     font-weight: 200;
     opacity: 0.4;
 }
@@ -116,6 +146,11 @@ footer .footer-divider {
     height: 1px;
     background: #595959;
     width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+footer p {
+    margin: 0.1rem;
 }
 
 .video-background {
@@ -140,5 +175,33 @@ footer .footer-divider {
 @media (max-height: 800px) {
     body {
         overflow: auto;
+    }
+}
+
+@media only screen 
+and (min-device-width : 540px) 
+and (max-device-width : 768px) 
+and (orientation : portrait) {
+    .tagline {
+        font-size: 1.17rem;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .tagline {
+        font-size: 1.754rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .tagline {
+        font-size: 1.96rem;
     }
 }

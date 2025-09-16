@@ -102,6 +102,11 @@ abbr {
     line-height: 2;
 }
 
+.deck-access {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
 .social a {
     color: #ffffff;
     padding: 0 3px;
